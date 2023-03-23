@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Store all locally stored Docker images in an array
+images=($(docker images --format '{{.Repository}}:{{.Tag}}'))
+
+# Loop through the array and update each image
+for image in "${images[@]}"
+do
+  docker pull $image
+done

@@ -6,6 +6,7 @@ sudo dnf install -y vim
 sudo dnf install -y neofetch
 sudo dnf install -y gnome-tweaks
 sudo dnf install -y grub-customizer
+sudo dnf install -y htop
 #install vlc
 sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm

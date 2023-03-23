@@ -5,3 +5,4 @@ cherry-tree
 discord
 spotify
 qbittorrent
+gwenview

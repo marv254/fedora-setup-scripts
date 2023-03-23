@@ -51,3 +51,19 @@ sudo ./aws/install
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
 chmod 700 get_helm.sh
 ./get_helm.sh
+
+#install Jetbrains toolbox
+# Download the latest version of JetBrains Toolbox
+wget -O jetbrains-toolbox.tar.gz "https://data.services.jetbrains.com/products/download?code=TBA&platform=linux"
+# Extract the downloaded file
+sudo tar -xzf jetbrains-toolbox.tar.gz -C /opt
+# Change to the extracted directory
+cd /opt/jetbrains-toolbox-*
+# Run the installer
+./jetbrains-toolbox
+# Remove the downloaded file and extracted directory
+cd - 
+rm -rf jetbrains-toolbox*
+
+#install maven
+sudo dnf install -y maven
