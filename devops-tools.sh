@@ -67,3 +67,13 @@ rm -rf jetbrains-toolbox*
 
 #install maven
 sudo dnf install -y maven
+
+#Installing Kubens
+# Download the latest version of kubectx
+curl -LO https://github.com/ahmetb/kubectx/releases/latest/download/kubectx
+# Download the latest version of kubens
+curl -LO https://github.com/ahmetb/kubectx/releases/latest/download/kubens
+# Make the downloaded files executable
+chmod +x kubectx kubens
+# Move the files to a directory in your PATH
+sudo mv kubectx kubens /usr/local/bin/
